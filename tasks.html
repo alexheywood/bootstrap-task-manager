@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Planner</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+    <div class="container-fluid m-0 p-0" id="site-container">
+
+        <div class="container-fluid" id="navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border rounded mt-3">
+        <a class="navbar-brand mx-3" href="#">My Planner</a>
+        <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-3">
+            <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="#">Tasks</a>
+            <a class="nav-item nav-link" href="#">Notes</a>
+            <a class="nav-item nav-link disabled" href="#">Account</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid" id="content-container">
+        <div class="row mx-1">
+            
+            <!-- sidebar content-->
+            <div class="d-block col-md-2 bg-light mt-3 mx-0 text-center border" id="sidebar-container" style="min-height: 600px;">
+                <div class="mt-3">
+                    <div id="profile-pic-container" class="bg-light">
+                        <img class="img-thumbnail rounded-circle img-sm" id="profile-pic" src="/img/avatar.png" alt="Profile picture" style="max-width: 70%">
+                        <div class="card mt-3">
+                            <div class="card-body">
+                              <h5 class="card-title">Alex Heywood</h5>
+                              <p class="card-text">Hi my name is Alex Heywood, I am 29 years of age and I am a web developer from Barry, South Wales.</p>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+                <h5 class="mt-3">My links</h3>
+                <ul class="nav d-block mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Reddit</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">YouTube</a>
+                    </li>
+                  </ul>
+            </div>
+        
+            <!--body content-->
+            <div class="col-sm-10 mt-3 mx-0" id="content-container">
+                <div class="col">
+            <div class="row">
+                <div class="col">
+                      <nav aria-label="breadcrumb m-0 p-0">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="/">Home</a></li>
+                          <li class="breadcrumb-item active">Tasks</a></li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+            <div class="container-fluid">
+
+              <a href="newtask.html" class="btn btn-primary btn-lg mb-3 mt-3">Add a task</a>
+
+            <div class="row">
+            <div class="col-6"><h3>Tasks</h3></div>
+            <div class="col-6"><h3>Percentage Completed</h3></div>
+            </div>
+            </div>
+
+            <div class="row bg-light mx-2 border">
+                <div id="item" class="d-flex">
+                <div class="col mt-3" id="item">
+                    <li class="mx-3" id="item-title">Buy the groceries for this week</li>
+                </div>
+            <div class="col">
+                <div class="progress m-3" style="width: 90%">
+                  <div class="progress-bar m-0" style="width: 70%" role="progressbar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" aria-labelledby="Item One"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row mx-2">
+                <div id="item" class="d-flex">
+                <div class="col mt-3" id="item">
+                    <li class="mx-3" id="item-title">Put away clothes after laundry</li>
+                </div>
+            <div class="col">
+                <div class="progress m-3" style="width: 90%">
+                  <div class="progress-bar m-0" style="width: 34%" role="progressbar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" aria-labelledby="Item One"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row mx-2 bg-light border">
+                <div id="item" class="d-flex">
+                <div class="col mt-3" id="item">
+                    <li class="mx-3" id="item-title">Make a work itinerary for next week</li>
+                </div>
+            <div class="col">
+                <div class="progress m-3" style="width: 90%">
+                  <div class="progress-bar m-0" style="width: 12%" role="progressbar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" aria-labelledby="Item One"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row mx-2">
+                <div id="item" class="d-flex">
+                <div class="col mt-3" id="item">
+                    <li class="mx-3" id="item-title">Clean the car.</li>
+                </div>
+            <div class="col">
+                <div class="progress m-3" style="width: 90%">
+                  <div class="progress-bar m-0" style="width: 88%" role="progressbar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" aria-labelledby="Item One"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+
+
+          </div>
+            
+        </div>
+        </div>
+        <!--footer content -->
+        <div class="container-fluid" id="footer-container rounded">
+        <div class="row">
+            <footer class="bg-light text-center mt-4 rounded">
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); height: 80px;">
+                  © 2020 Copyright:
+                  <a class="text-dark" href="http://alexheywood.co.uk">Alex Heywood</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+        </div>
+    </div>
+    </div>
+
+    
+
+
+
+</body>
+</html>
